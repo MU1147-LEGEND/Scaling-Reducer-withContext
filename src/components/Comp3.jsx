@@ -57,7 +57,7 @@ const Comp3 = () => {
 
     return (
         <>
-            <div className="bg-black/80 m-auto text-center w-10/12 text-white">
+            <div className="bg-black/80 m-auto text-center w-full px-3 lg:w-10/12 text-white">
                 <h1 className="text-3xl">Tourist spots to visit</h1>
                 <div className="py-4">
                     <AddInput
@@ -84,7 +84,7 @@ const Comp3 = () => {
                                     return (
                                         <div
                                             key={task.id}
-                                            className="my-3 w-96 m-auto text-left flex justify-between items-center"
+                                            className="my-3 lg:w-96 m-auto text-left flex justify-between items-center"
                                         >
                                             <div className="tasks">
                                                 <input
@@ -106,7 +106,7 @@ const Comp3 = () => {
                                                             className={
                                                                 editError
                                                                     ? "ring-2 ring-red-500 py-1.5 px-2 rounded-lg focus:outline-none"
-                                                                    : "text-black py-1.5 px-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                                                    : "text-black py-1.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                                                             }
                                                             placeholder={
                                                                 editError
